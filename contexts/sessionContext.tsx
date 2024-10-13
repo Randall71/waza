@@ -7,7 +7,7 @@ const AuthContext = createContext<{
   session?: string | null;
   isLoading: boolean;
 }>({
-  signIn: () => null,
+  signIn: (token: string) => null,
   signOut: () => null,
   session: null,
   isLoading: false,
@@ -22,18 +22,22 @@ export function useSession() {
     }
   }
 
+  console.log(value.session, "SESSION IN USESESSION HOOK");
+
   return value;
 }
 
 export function SessionProvider({ children }: PropsWithChildren) {
   const [[isLoading, session], setSession] = useStorageState("session");
 
+  console.log(session, "SESSION IN SESSION PROVIDER");
+
   return (
     <AuthContext.Provider
       value={{
-        signIn: () => {
+        signIn: (token: string) => {
           // Perform sign-in logic here
-          setSession("xxx");
+          setSession(token);
         },
         signOut: () => {
           setSession(null);

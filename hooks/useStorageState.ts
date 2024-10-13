@@ -31,6 +31,7 @@ export async function setStorageItemAsync(key: string, value: string | null) {
     if (value == null) {
       await SecureStore.deleteItemAsync(key);
     } else {
+      console.log("Session correctly saved ");
       await SecureStore.setItemAsync(key, value);
     }
   }
@@ -51,7 +52,11 @@ export function useStorageState(key: string): UseStateHook<string> {
         console.error("Local storage is unavailable:", e);
       }
     } else {
+      console.log("Getting session from secure store");
+      console.log(key, "KEY");
+
       SecureStore.getItemAsync(key).then((value) => {
+        console.log(value, "VALUE inside getItemAsync");
         setState(value);
       });
     }
@@ -60,6 +65,8 @@ export function useStorageState(key: string): UseStateHook<string> {
   // Set
   const setValue = useCallback(
     (value: string | null) => {
+      console.log(value, "VALUE");
+      console.log(key, "KEY");
       setState(value);
       setStorageItemAsync(key, value);
     },

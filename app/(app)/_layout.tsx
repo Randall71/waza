@@ -6,12 +6,14 @@ import { useSession } from "~/contexts/sessionContext";
 export default function AppLayout() {
   const { session, isLoading } = useSession();
 
-  if (isLoading) {
-    return <Text>Loading...</Text>;
-  }
+  console.log(session, "SESSION ON (APP) LAYOUT");
+
+  // if (isLoading) {
+  //   return <Text>Loading...</Text>;
+  // }
 
   if (!session) {
-    return <Redirect href="/" />;
+    return <Redirect href="/(auth)" />;
   }
 
   return <Stack />;

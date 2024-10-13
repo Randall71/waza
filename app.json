@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.randall71.wazatest"
     },
     "web": {
       "bundler": "metro",
@@ -32,6 +33,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a9071ed4-2542-4c9b-8bbd-ffebf2088c23"
+      }
+    },
+    "owner": "randall71"
   }
 }
