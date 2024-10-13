@@ -7,6 +7,7 @@ import Carousel, {
   Pagination,
 } from "react-native-reanimated-carousel";
 import { Button } from "../ui/button";
+import { router } from "expo-router";
 
 const data = [...new Array(2).keys()];
 const width = Dimensions.get("window").width;
@@ -65,7 +66,7 @@ export default function OnBoardingScreen() {
           onPress={onPressPagination}
         />
 
-        <Button className="w-full mt-6">
+        <Button onPress={() => router.push("/sign-up")} className="w-full mt-6">
           <Text className="text-white">Créer un compte</Text>
         </Button>
       </View>
