@@ -2034,6 +2034,16 @@
   dependencies:
     web-streams-polyfill "^3.1.1"
 
+"@rn-primitives/slot@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@rn-primitives/slot/-/slot-1.0.5.tgz#9b54166563190d732aa8e40e9420c2ecdf2eb684"
+  integrity sha512-tZWTKtQETDaVsqiMvFZjyLCM1VcOPnd5LcT6saYiiONJPtQNUvJHqMH7Ny3+frOc3CEwADgTNRJpKtOKxVDNzA==
+
+"@rn-primitives/types@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@rn-primitives/types/-/types-1.0.5.tgz#1062b6cd9c458ead495ec262e99310d19ecd7a9d"
+  integrity sha512-1E+5O/3HQRiGJk5nR6RqOqMrlwf3pbkTkDgp/L3f9iWZ+LH7kFv+fBwMCLehrAJTzvZe/p3PpARdun5eLwEo8Q==
+
 "@rnx-kit/chromium-edge-launcher@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@rnx-kit/chromium-edge-launcher/-/chromium-edge-launcher-1.0.0.tgz#c0df8ea00a902c7a417cd9655aab06de398b939c"
@@ -7152,10 +7162,10 @@ react-native-helmet-async@2.0.4:
     react-fast-compare "^3.2.2"
     shallowequal "^1.1.0"
 
-react-native-reanimated-carousel@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated-carousel/-/react-native-reanimated-carousel-3.5.1.tgz#3605b9959ffc0aa1c6b8b8736d98f91f46e36b17"
-  integrity sha512-9BBQV6JAYSQm2lV7MFtT4mzapXmW4IZO6s38gfiJL84Jg23ivGB1UykcNQauKgtHyhtW2NuZJzItb1s42lM+hA==
+react-native-reanimated-carousel@4.0.0-alpha.12:
+  version "4.0.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated-carousel/-/react-native-reanimated-carousel-4.0.0-alpha.12.tgz#5458501e8b58429a52c8cd495a1b925a896b64d2"
+  integrity sha512-7ZCpU3lfS5NR6PvDpdcOvdHo6UApg0RvlL9/YSih4cEBKdT9sdmsIhnRsiaAJGYdJl5m03wibfPf5cYxCdk64A==
 
 react-native-reanimated@~3.10.1:
   version "3.10.1"
